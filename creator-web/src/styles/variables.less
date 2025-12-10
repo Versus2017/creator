@@ -1,0 +1,151 @@
+// Mini Translate 设计系统变量
+// 黑色基调 + 微妙色彩点缀
+
+// ===== 色彩系统 =====
+
+// 主品牌色 - 微妙蓝色点缀
+@primary-color: #3B82F6;          // 现代蓝色作为主色
+@primary-light: #60A5FA;          // 浅蓝色
+@primary-dark: #1D4ED8;           // 深蓝色
+
+// 辅助色调 - 保持简洁但有层次
+@secondary-color: #8B5CF6;        // 紫色，用于次要元素
+@accent-color: #06B6D4;           // 青色，用于强调
+
+// 中性色系 - 黑白灰度 + 微妙色彩
+@text-primary: #FFFFFF;           // 主要文字 - 白色
+@text-secondary: #E5E7EB;         // 次要文字 - 浅灰
+@text-tertiary: #9CA3AF;          // 三级文字 - 中灰
+@text-placeholder: #6B7280;       // 占位符文字 - 深灰
+
+// 背景色系 - 深色系
+@bg-primary: #000000;             // 主背景 - 纯黑
+@bg-secondary: #0F0F0F;           // 次要背景 - 深灰黑
+@bg-tertiary: #1A1A1A;            // 卡片背景 - 浅灰黑
+@bg-elevated: #262626;            // 悬浮背景 - 中灰黑
+
+// 分割线和边框 - 灰色系 + 微妙色彩
+@separator-color: #374151;        // 分割线
+@border-color: #4B5563;           // 边框
+
+// 语义化颜色 - 保持功能性
+@success-color: #10B981;          // 成功绿
+@warning-color: #F59E0B;          // 警告橙
+@error-color: #EF4444;            // 错误红
+@info-color: #3B82F6;             // 信息蓝
+
+// 深色模式色彩（当前就是深色模式）
+@dark-bg-primary: #000000;
+@dark-bg-secondary: #0F0F0F;
+@dark-bg-tertiary: #1A1A1A;
+@dark-text-primary: #FFFFFF;
+@dark-text-secondary: #E5E7EB;
+
+// ===== 字体系统 =====
+
+// Apple 系统字体栈
+@font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// 等宽字体（用于代码显示）
+@font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+
+// 标题字号
+@font-size-h1: 34px;              // 大标题
+@font-size-h2: 28px;              // 二级标题  
+@font-size-h3: 22px;              // 三级标题
+@font-size-h4: 20px;              // 四级标题
+@font-size-h5: 18px;              // 五级标题
+@font-size-h6: 16px;              // 六级标题
+
+// 正文字号
+@font-size-large: 17px;           // 大号正文
+@font-size-base: 15px;            // 基础正文
+@font-size-small: 13px;           // 小号文字
+@font-size-mini: 11px;            // 最小文字
+
+// 字重
+@font-weight-light: 300;          // 细体
+@font-weight-normal: 400;         // 常规
+@font-weight-medium: 500;         // 中等
+@font-weight-semibold: 600;       // 半粗体
+@font-weight-bold: 700;           // 粗体
+
+// 行高规范
+@line-height-tight: 1.2;          // 紧凑行高（标题）
+@line-height-base: 1.4;           // 基础行高（正文）
+@line-height-relaxed: 1.6;        // 宽松行高（长文本）
+
+// ===== 间距系统 =====
+
+// 4px 基础网格系统
+@spacing-xs: 4px;                 // 超小间距
+@spacing-sm: 8px;                 // 小间距
+@spacing-md: 16px;                // 中等间距
+@spacing-lg: 24px;                // 大间距
+@spacing-xl: 32px;                // 超大间距
+@spacing-xxl: 48px;               // 特大间距
+
+// 组件内间距
+@padding-xs: 8px;
+@padding-sm: 12px;
+@padding-md: 16px;
+@padding-lg: 20px;
+@padding-xl: 24px;
+
+// 页面级间距
+@container-padding: 20px;         // 容器内边距
+@section-spacing: 40px;           // 区块间距
+
+// ===== 圆角和阴影系统 =====
+
+// 圆角规范
+@border-radius-sm: 6px;           // 小圆角
+@border-radius-md: 8px;           // 中等圆角
+@border-radius-lg: 12px;          // 大圆角
+@border-radius-xl: 16px;          // 超大圆角
+@border-radius-round: 50%;        // 圆形
+
+// 现代阴影系统
+@shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+@shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.25);
+@shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2);
+@shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.15);
+
+// 特殊阴影
+@shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+@shadow-focus: 0 0 0 3px rgba(59, 130, 246, 0.3);
+
+// 彩色阴影
+@shadow-primary: 0 10px 25px rgba(59, 130, 246, 0.2);
+@shadow-secondary: 0 10px 25px rgba(139, 92, 246, 0.2);
+@shadow-accent: 0 10px 25px rgba(6, 182, 212, 0.2);
+
+// ===== 动效系统 =====
+
+// 基础过渡
+@transition-fast: 0.15s ease;
+@transition-base: 0.2s ease;
+@transition-slow: 0.3s ease;
+
+// 缓动函数
+@ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+@ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+// ===== 响应式断点 =====
+
+// 断点定义
+@screen-xs: 480px;
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+@screen-xl: 1600px;
+
+// ===== Z-index 层级 =====
+
+@z-index-dropdown: 1000;
+@z-index-sticky: 1020;
+@z-index-fixed: 1030;
+@z-index-modal-backdrop: 1040;
+@z-index-modal: 1050;
+@z-index-popover: 1060;
+@z-index-tooltip: 1070; 

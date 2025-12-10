@@ -1,0 +1,19 @@
+.idea
+.idea/
+.DS_Store
+.project
+
+# Sensitive/local assets to keep out of the repo
+creator-api/creator/api/test/
+creator-api/creator/api/conversations/local_prompt*.py
+creator-api/creator/api/conversations/local_prompts.py
+creator-api/creator/local_config.env
+
+# Internal planning docs (exclude from open source)
+RAG_README.md
+产品规划与技术方案.md
+笔记功能需求文档.md
+creator-api/creator/api/conversations/TRANSCRIPTION_OPTIMIZATION.md
+creator-api/creator/api/conversations/WEBM_PERFORMANCE_OPTIMIZATION.md
+creator-api/creator/api/conversations/WHISPER_FFMPEG_ISSUE.md
+creator-api/creator/api/conversations/WHISPER_FFMPEG_SOLUTION_ANALYSIS.md

@@ -1,0 +1,243 @@
+// 导入设计系统变量
+@import '../../../../styles/variables.less';
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  width: 100%;
+  background: @bg-primary;
+  //border-bottom: 1px solid @separator-color;
+  padding: 0 @spacing-xl;
+  position: relative;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  
+  // 品牌区域
+  .brand-section {
+    flex: 0 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: all @transition-base;
+      padding: @spacing-sm;
+      border-radius: @border-radius-md;
+      height: 48px; // 固定高度，确保不超出header
+      
+      &:hover {
+        background: rgba(0, 122, 255, 0.05);
+        transform: translateY(-1px);
+      }
+      
+      .logo-icon {
+        width: 32px;  // logo尺寸
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: @spacing-sm;  // 减小间距
+        flex-shrink: 0;
+        
+        .logo-image {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        
+        .logo-emoji {
+          font-size: 20px;  // emoji尺寸
+          line-height: 1;
+        }
+        
+        .ivu-icon {
+          font-size: 16px;  // 减小图标尺寸
+          color: white;
+        }
+      }
+      
+      .brand-info {
+        line-height: 1.2;
+        
+        .brand-name {
+          font-size: @font-size-base;  // 减小字体
+          font-weight: @font-weight-bold;
+          color: @text-primary;
+          margin: 0;
+          line-height: 1.2;
+          white-space: nowrap;
+        }
+        
+        .brand-tagline {
+          font-size: @font-size-small;
+          color: @text-tertiary;
+          line-height: 1;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  
+  // 导航区域
+  .nav-section {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    
+    .main-nav {
+      display: flex;
+      gap: @spacing-md;  // 减小间距
+      height: 100%;
+      align-items: center;
+      
+      .nav-item {
+        display: flex;
+        align-items: center;
+        gap: @spacing-xs;
+        padding: @spacing-xs @spacing-sm;  // 减小padding
+        border-radius: @border-radius-sm;
+        color: @text-secondary;
+        text-decoration: none;
+        font-size: @font-size-base;  // 调整为基础字体大小
+        font-weight: @font-weight-medium;
+        transition: all @transition-base;
+        height: 36px;  // 稍微增加高度以适应更大的字体
+        white-space: nowrap;
+        
+        .ivu-icon {
+          font-size: 16px;  // 增加图标大小
+          flex-shrink: 0;
+        }
+        
+        &:hover {
+          color: @primary-color;
+          background: rgba(0, 122, 255, 0.05);
+          transform: translateY(-1px);
+        }
+        
+        &.active {
+          color: @primary-color;
+          background: rgba(0, 122, 255, 0.1);
+          
+          .ivu-icon {
+            color: @primary-color;
+          }
+        }
+      }
+    }
+  }
+  
+  // 用户区域
+  .user-section {
+    flex: 0 0 auto;
+    margin-right: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    .auth-buttons {
+      display: flex;
+      align-items: center;
+      gap: @spacing-sm;
+      height: 100%;
+      
+      .ivu-btn {
+        height: 32px;  // 固定按钮高度
+        font-size: @font-size-small;
+        
+        &.login-btn {
+          color: @text-secondary;
+          font-weight: @font-weight-medium;
+          border: none;
+          background: transparent;
+          
+          &:hover {
+            color: @primary-color;
+            background: rgba(0, 122, 255, 0.05);
+          }
+        }
+        
+        &.register-btn {
+          background: @primary-color;
+          border-color: @primary-color;
+          font-weight: @font-weight-medium;
+          border-radius: @border-radius-sm;
+          
+          &:hover {
+            background: @primary-dark;
+            border-color: @primary-dark;
+            transform: translateY(-1px);
+            box-shadow: @shadow-sm;
+          }
+        }
+      }
+    }
+    
+    .user-info {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  }
+  
+  // 响应式设计
+  @media (max-width: @screen-lg) {
+    padding: 0 @spacing-md;
+    
+    .nav-section .main-nav {
+      gap: @spacing-sm;
+      
+      .nav-item {
+        padding: @spacing-xs;
+        
+        span {
+          display: none;  // 隐藏文字，只显示图标
+        }
+      }
+    }
+  }
+  
+  @media (max-width: @screen-md) {
+    padding: 0 @spacing-md;
+    
+    .nav-section {
+      display: none; // 在中等屏幕上隐藏导航
+    }
+    
+    .brand-info .brand-tagline {
+      display: none; // 隐藏标语
+    }
+  }
+  
+  @media (max-width: @screen-sm) {
+    padding: 0 @spacing-sm;
+    
+    .brand-info .brand-name {
+      font-size: @font-size-small;
+    }
+    
+    .logo-icon {
+      width: 28px !important;
+      height: 28px !important;
+      
+      .ivu-icon {
+        font-size: 14px !important;
+      }
+    }
+    
+    .auth-buttons .ivu-btn {
+      font-size: @font-size-mini;
+      height: 28px;
+      padding: 0 @spacing-sm;
+    }
+  }
+}
