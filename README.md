@@ -2,6 +2,14 @@
 
 一站式“语音→灵感→脚本”工作台：用 Whisper（默认 faster-whisper 提速）做本地/云转写，结合对话式 AI 把口述灵感快速沉淀为成品脚本。
 
+## 功能预览
+
+<p align="center">
+  <img src="docs/images/preview-1.png" width="32%" alt="Preview 1" />
+  <img src="docs/images/preview-2.png" width="32%" alt="Preview 2" />
+  <img src="docs/images/preview-3.png" width="32%" alt="Preview 3" />
+</p>
+
 ## 主要特性
 - 语音转写提速：faster-whisper 本地优先，支持云端切换，语音想法即时落地
 - 对话式脑暴：围绕主题多轮交流，可带用户画像/标签/上下文
