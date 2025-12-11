@@ -4,11 +4,9 @@
 
 ## 功能预览
 
-<p align="center">
-  <img src="docs/images/preview-1.png" width="32%" alt="Preview 1" />
-  <img src="docs/images/preview-2.png" width="32%" alt="Preview 2" />
-  <img src="docs/images/preview-3.png" width="32%" alt="Preview 3" />
-</p>
+<img src="docs/images/preview-1.png" width="100%" alt="Preview 1" />
+<img src="docs/images/preview-2.png" width="100%" alt="Preview 2" />
+<img src="docs/images/preview-3.png" width="100%" alt="Preview 3" />
 
 ## 主要特性
 - 语音转写提速：faster-whisper 本地优先，支持云端切换，语音想法即时落地
