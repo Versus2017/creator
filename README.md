@@ -39,5 +39,15 @@
 ## 相关项目
 - 基于本框架的衍生项目示例：https://github.com/Versus2017/vige/tree/public-master
 
+## 关注作者
+欢迎关注我的社交媒体账号，分享更多关于独立开发、AI应用与数字游民的实战干货：
+- **抖音 / 小红书 / 视频号**：数字游民v哥
+
+<p align="left">
+  <img src="docs/images/douyin.jpeg" alt="抖音" width="240" />
+  <img src="docs/images/xiaohongshu.jpeg" alt="小红书" width="240" />
+  <img src="docs/images/shipinhao.jpeg" alt="视频号" width="240" />
+</p>
+
 ## 反馈与贡献
 欢迎 Issue / PR 指正与改进。如果你在性能、体验、架构上有建议，随时留言或提交代码；感谢一起把“语音→脚本”链路打磨得更顺畅。
