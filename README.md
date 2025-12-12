@@ -21,15 +21,20 @@
 - 语音：faster-whisper 优先，FFmpeg 处理，支持本地/云切换
 - 前端：Vue 2 + iView / Mint UI（web / bo / wechat 子项目）
 
-## 快速开始（后端 vige-api）
+## 快速开始（后端 creator-api）
 1. `cd creator-api`
 2. `pipenv install && pipenv shell`
 3. 新建并填写 `creator/local_config.env`（本地私密配置，已被忽略）
 4. 可选：创建 `creator/api/conversations/local_prompts.py` 放置你的真实 prompt（文件已被忽略）
-5. 运行：`python app.py`
+5. 运行：`make run`
+6. 在api目录下，虚拟环境运行worker： `make worker` 启动worker，用来执行语音转文本任务
 
-## 前端启动（vige-web / vige-bo / vige-wechat）
+## 前端启动（creator-web / creator-bo / creator-wechat）
 进入对应子目录执行 `yarn install && yarn serve`，按需配置环境变量。
+
+- 前端：creator-web
+- 后台管理：creator-bo
+- 微信H5： creator-wechat
 
 ## 相关项目
 - 基于本框架的衍生项目示例：https://github.com/Versus2017/vige/tree/public-master
