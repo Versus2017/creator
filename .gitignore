@@ -1,0 +1,39 @@
+.idea
+.idea/
+.DS_Store
+.project
+
+# 本地私密配置
+.env
+.env.*
+!.env.example
+**/local_config.env
+creator-api/.env
+
+# 运行时上传与生成物
+**/instance/
+hyperframes-projects/
+*.mp4
+
+# 本地 MCP / Codex 上下文（若放在项目内）
+.evofounder-context.md
+
+# 本地 prompt / 内部测试（保留仓库内 prompts.py 作为默认模板）
+creator-api/creator/api/conversations/local_prompt*.py
+creator-api/creator/api/conversations/local_prompts.py
+creator-api/creator/api/test/
+
+# 内部文档（docs/images/ 用于 README，需提交）
+docs/*.md
+RAG_README.md
+产品规划与技术方案.md
+自媒体路线与产品规划.md
+笔记功能需求文档.md
+creator-api/creator/api/conversations/TRANSCRIPTION_OPTIMIZATION.md
+creator-api/creator/api/conversations/WEBM_PERFORMANCE_OPTIMIZATION.md
+creator-api/creator/api/conversations/WHISPER_FFMPEG_ISSUE.md
+creator-api/creator/api/conversations/WHISPER_FFMPEG_SOLUTION_ANALYSIS.md
+creator-api/creator/api/test/COMPARE_README.md
+creator-api/creator/api/test/QUICKSTART.md
+creator-api/creator/api/test/README_TOKEN_TEST.md
+creator-api/creator/api/test/UPDATE_SUMMARY.md

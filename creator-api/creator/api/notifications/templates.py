@@ -1,0 +1,8 @@
+
+class SMS_TEMPLATE:
+    # 教练登录模板
+    LOGIN_VERIFICATION = 'SMS_296795040'
+    # # 支付成功模板
+    # ORDER_PAY_SUCCESS = 'SMS_218549556'
+    # # 预约练车提前提醒模板
+    # APPOINTMENT_IN_ADVANCE_NOTICE = 'SMS_218734384'
